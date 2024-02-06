@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.main-nav li {
+    float: right;
+    padding: 0 3%;
+}
+
+.main-nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 1em;
+    padding: 0;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.hola {
+    margin: 0;
+    margin-top: 5px;
+    font-family: "Lobster";
+    font-size: 2em;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.div-section {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.name {
+    margin: 0;
+    font-size: 64pt;
+    font-family: Arial, Helvetica, sans-serif; /* Use the same font-family as in .main-nav */
+    font-weight: bolder;
+}
+
+.name-color {
+    color: #24FF00;
+}
+.see-more{
+    float: left;
+    width: 230px;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+.arrow{
+    color: #24FF00;
+    
+}
+
+.brief-det {
+    max-width: 60%;
+    display: flex;
+    text-align: left;
+    font-weight: lighter;
+}
+.about-det{
+    display: inline;
+}
+
