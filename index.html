@@ -18,17 +18,19 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <!-- <li><a href="#">Home</a></li> -->
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
                     </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
                 </nav>
                 <div class="header-text">
                     <h1>
                         <span> MICHAEL</span> FLORES
                     </h1>
-                    <p id="typewriter">
-                        
-                    </p>
+                    <div class="typewriter-container">
+                        <p id="typewriter">
+                            Welcome to my Personal Website.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,7 +42,7 @@
                         <img src="assets/images/headerface.png" alt="">
                     </div>
                     <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
+                        <h1 class="sub-title" id="typewriter">About Me</h1>
                         <p>
                             Welcome! I'm a front-end web developer specializing in ReactJS and Tailwind CSS. 
                             With a focus on crafting captivating user interfaces, 
@@ -50,28 +52,29 @@
                             Let's create amazing digital experiences together!
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Web Development: Frontend</span><br>React, Tailwind, Material UI</li>
-                                <li><span>Software: Native Applications</span><br>Java</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                
-                                <li><span>Pustanan Printers</span><br>Frontend Web Developer</li>
-                                <li><span>Statech Repair Shop</span><br>Technician</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>CITE Technical Institute, Inc.</span><br>Computer Engineering Technology</li>
-                                <li><span>St. Cecilia's College, Inc.</span><br>TECVOC: ICT-Computer Programming</li>
-                            </ul>
+                            
+                       
+                            <div class="tab-contents active-tab" id="skills">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <ul>
+                                    <li><span>Web Development: Frontend</span><br>React, Tailwind, Material UI</li>
+                                    <li><span>Software: Native Applications</span><br>Java</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents active-tab" id="experience">
+                                <ul>
+                                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                                    <li><span>Pustanan Printers</span><br>Frontend Web Developer</li>
+                                    <li><span>Statech Repair Shop</span><br>Technician</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents active-tab" id="education">
+                                <ul>
+                                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                                    <li><span>CITE Technical Institute, Inc.</span><br>Computer Engineering Technology</li>
+                                    <li><span>St. Cecilia's College, Inc.</span><br>TECVOC: ICT-Computer Programming</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -82,20 +85,20 @@
                 <h1 class="sub-title">Projects</h1>
                 <div class="services-list">
                     <div>
-                        <i class="fa-solid fa-folder-open"></i>
+                        <i class="fa-solid fa-folder-open icons"></i>
                         <h2>Online-Shop</h2>
                         <p>
                            A Taylor Swift Online Shop inspired Web Prototype, that features web responsiveness.
                         </p>
-                        <a href="https://github.com/FloresTristan/WebDev-TaylorSwift" target="_blank">View in Github </a>
+                        <a href="https://github.com/FloresTristan/WebDev-TaylorSwift" target="_blank">View in Github <i class="fa-solid fa-angles-right"></i> </a>
                     </div>
                     <div>
-                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-solid fa-code icons"></i>
                         <h2>CITE Vehicle Registration App</h2>
                         <p>
                             A native application, made only using java and its native GUI components. Made to register new vehicles, and is equipped with roles to manage the data locally
                         </p>
-                        <a href="https://github.com/FloresTristan/GroupProj" target="_blank">View in Github</a>
+                        <a href="https://github.com/FloresTristan/GroupProj" target="_blank">View in Github <i class="fa-solid fa-angles-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -132,6 +135,14 @@
                         <h1 class="sub-title">
                             Contact Me
                         </h1>
+                        <form action="">
+                            <textarea name="Message" id=""  rows="6" placeholder="write to me..."></textarea>
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                    <div class="contact-right">
                         <p><i class="fa-solid fa-paper-plane"></i>
                             michaeltristanflores646@gmail.com
                         </p>
@@ -144,14 +155,6 @@
                             <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-regular fa-envelope"></i></a>
                         </div>
                     </div>
-                    <div class="contact-right">
-                        <form action="">
-                            <textarea name="Message" id=""  rows="6" placeholder="write to me..."></textarea>
-                            <input type="text" name="Name" placeholder="Your name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                    </div>
                 </div>
             </div>
             
@@ -161,27 +164,6 @@
                 Made By Michael Flores
             </p>
         </div>
-         <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link")
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab")
-                }
-                event.currentTarget.classList.add("active-link")
-                document.getElementById(tabname).classList.add('active-tab')
-            }
-            var sidemenu =document.getElementById("sidemenu");
-            function openmenu(){
-                sidemenu.style.right = "0";
-            }
-            function closemenu(){
-                sidemenu.style.right = "-200";
-            }
-        </script> 
+        <!--  -->
     </body>
 </html>
